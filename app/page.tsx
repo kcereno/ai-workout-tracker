@@ -1,7 +1,9 @@
+import { Button } from '@/components/ui/button';
+
 export default function Home() {
   return (
-    <>
-      <h1>Workout App</h1>
-    </>
+    <div className="bg-gray-200 h-screen">
+      <Button>Click me</Button>
+    </div>
   );
 }
