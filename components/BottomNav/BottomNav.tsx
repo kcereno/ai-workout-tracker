@@ -28,13 +28,13 @@ const BottomNav = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full z-10  ">
-      <div className="flex justify-around py-5">
+    <nav className="fixed bottom-0 left-0 w-full z-10 bg-gray-100 h-14">
+      <div className="flex justify-around items-center h-full">
         {navItems.map(({ href, icon: Icon }) => (
           <Link
             key={href}
             href={href}
-            className="flex flex-col items-center text-gray-500 hover:text-black"
+            className="text-gray-500 hover:text-black"
           >
             <Icon
               className={`h-8 w-8 ${
